@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "c63e39f6-40aa-4106-84b4-187b2c979ab1",
+		"name": "Payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14685394"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8083/admin/transactions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{admin}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8083/admin/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"admin",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/transactions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{customer}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8083/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
